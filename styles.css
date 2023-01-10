@@ -1,28 +1,38 @@
 /* Style sheet for my GitHub web page */    
   
-  body 		{ background-color: #f7f9f9; font-size: 20px;
+	body 		{ background-color: #f7f9f9; font-size: 20px;
 				  font-family: times; 
- 	 }
+ 	}
+	
 	h1, h2 		{ margin-bottom:0; 
-	 }  
+	}  
+	
 	a 			{ padding-left:15px; color: #410953; font-size: 18px;
-	 }
+	}
+	
 	li 			{ font-weight: normal; padding-bottom:2px;
-	 } 
+	} 
 		  
+	footer 		{ font-size: 15px; text-align: center;
+				  font-weight: normal; 
+	}
+	
 	.block1 	{ background-color: #f7f9f9;	width: 100%;  
 	              font-size:18px;		
 				  padding:20px 20px 20px 20px;		
-	  }
+	}
     .block2 	{ background-color: #728fce;   /*344b60 */
 			      width: 100%;  
                   font-size:18px;
 				  border: 1px solid black;
 			      padding:15px 15px 15px 15px;	
-	  }
-	.bg {  width: 100%;	z-index: 0; border: 2px solid black;
+	}
+	
+	.bg 		{  width: 100%;	z-index: 0; border: 2px solid black;
 	  }
 	  
-	.center {	  display: block;	 	 margin-left: auto;
+	.center 	{ display: block;	 	 margin-left: auto;
 				  margin-right: auto;	 width: 50%;
 	} 
+	
+			
