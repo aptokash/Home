@@ -31,7 +31,7 @@
 	   	var version  = document.getElementById("version");
 	   	document.title    = "IL-to-BS 1.10"
 	   						  
-		 version.innerHTML =  "    Version 1.10   </b> " + 
+		 version.innerHTML =  "    Version 1.10b   </b> " + 
 						      "<br> <small style='color: black;'> 01/05/2025  Error Message is more pronounced"  +
 						      "<br> <small style='color: black;'> Previous: supports 1 comment before question,  Supports 'Q#.' without '(1 point)'."  
 						      
