@@ -1,0 +1,124 @@
+<!doctype  html >
+<!-- ********************************************************************************************* 
+     ***                    Birding                                                            ***      
+     ***                                                                                       ***   
+     
+	 ******************************************************************************************** -->
+<html lang="en"> 
+<head>
+  <title> Birding!   </title>
+
+    <link rel="icon"       type="image/x-icon" href="Birding-icon.jpg">
+
+	<style>
+		body 		{ background-color: #fad7a0 ; font-size: 20px;
+					font-family: times; 
+		}
+		h1, h2 		{ margin-bottom:0; }
+		a			{ padding-left:15px; color: #410953; font-size: 18px;}
+		footer 		{ font-size: 15px; text-align: center;  font-weight: normal; }
+		
+	    .block2 	{ width: 100%;          font-size:18px;
+					  border: 1px solid black;
+					  padding:5px 5px 5px 5px;	
+					}
+	
+		.bg 		{  width: 100%;	z-index: 0; border: 2px solid black; }
+	  	  
+		.center 	{ display: block;	 	 margin-left: auto;	margin-right: auto;	 width: 50%;}
+	</style>			
+
+  
+</head>    
+
+<!-- ********************************************************************************************* --> 
+<body>    
+
+	<img src="Birding-Banner.jpg" class="bg"> 
+
+
+<!-- ************************************************************************ -->
+	<div style="margin-Top: 10px;"> 
+		<div class="block2" style="text-align: top; " id="one">   
+			<strong> E-Bird   </strong>
+				<br>	<a href="https://ebird.org/region/US-NY-027"			> Dutchess County	</a>
+						<a href="https://ebird.org/alert/summary?sid=SN36600" 	> Alerts		 	</a>		
+						<a href="https://ebird.org/region/US-NY-027/recent-checklists" 	> Checklists </a>		
+				<br> 	<a href="https://ebird.org/region/US-NY-079"			> Putnam County		</a>
+						<a href="https://ebird.org/alert/summary?sid=SN37085" 	> Alerts		 	</a>		
+				<br> 	<a href="https://ebird.org/region/US-NY-071"			> Orange County		</a>
+						<a href="https://ebird.org/alert/summary?sid=SN35958" 	> Alerts		 	</a>		
+				<br> 	<a href="https://ebird.org/region/US-NY-111"			> Ulster County		</a>
+						<a href="https://ebird.org/alert/summary?sid=SN36077" 	> Alerts		 	</a>		
+		</div>		
+	
+			
+		<div class="block2" style="text-align: top;" id="two">   
+						<a href="https://watermanbirdclub.org"							> RT Waterman	</a>
+						<a href="https://watermanbirdclub.org/about-us/field-trips-2/"	> Field Trips	</a>
+						<a href="https://ebird.org/profile/MjQxNzIz/US-NY"	> 			  Checklists 	</a>
+				<br>	<a href="https://www.allaboutbirds.org/news/"	> 				  Cornell's Birds </a>
+				<br>	<a href="https://watermanbirdclub.org/wp-content/uploads/2016/01/Where-to-Bird-in-DC-3rd-ed-1.pdf">	
+																						  Dutchess County Birding  </a>
+				<br>	<a href="https://orangebirding.com/?m=202406"	> 				  Orange County Birding  </a>
+				<br>	<a href="https://www.tide-forecast.com/locations//New-Hamburg-Hudson-River-New-York/tides/latest"> 	 Hudson Tides</a>
+		</div>
+	</div> 
+	
+	<!--- --------------------------------------------------------------------------------------------------------- --->                               	
+	<br style="clear:both;">  
+ 	<div class="block2" style="text-align: top;  " >   
+					<a href="https://mileshearn.com/2021/02/14/identification-of-11-sparrow-species-a-photographic-guide/"> Sparrows </a> </li>
+			<br>	<a href="https://www.hmana.org/wp-content/uploads/2021/10/Eastern-Migrant-Raptor-Flight-Guide-2021.pdf">  Hawk Guide </a>	</li>	
+			<br>	<a href="https://www.lycobirds.com/id-quiz/">                                                            Lyco Bird Quiz </a>	</li>	
+		
+	</div>  
+
+
+	<!--- --------------------------------------------------------------------------------------------------------- --->                               	
+	 <footer>	
+		<hr>
+		<p>	
+		  <script>
+			var lastDate = document.lastModified;
+			
+			document.write("V 1.0a Last updated: " + " " + lastDate.substr(0,10));
+			
+			const currentUrl = window.location.href;
+			if ( currentUrl.indexOf("Dropbox") == -1) {var laptop = false;} 
+			else                					  {var laptop = true; }
+			
+			
+			var one	 = document.getElementById("one"); 
+			var two	 = document.getElementById("two"); 
+			
+			
+			//laptop = false;
+			
+			newRow  = document.getElementById("one");
+			if (laptop) { 
+				one.setAttribute("style","width:45%");
+				one.style.cssFloat = "left"; 
+				two.setAttribute("style","width:45%");
+				two.style.cssFloat = "right"; 
+				
+				//document.getElementById("status").innerHTML = "working!";
+			
+			}
+			else {
+				 two.style.marginTop = "10px"; 
+			}
+			
+			
+			
+			
+			
+			
+		  </script>	
+						
+	</footer>		
+	 
+	 
+</body>
+</html>	
+
