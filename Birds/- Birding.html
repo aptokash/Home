@@ -22,10 +22,28 @@
 		.bg 		{  width: 100%;	z-index: 0; border: 2px solid black; }
 	  	  
 		.center 	{ display: block;	 	 margin-left: auto;	margin-right: auto;	 width: 50%;}
-		.one,.two, .d3, .d4	{ width: 90%;          
-					  border: 1px solid black;
-					  padding:5px 5px 5px 5px;	}
-		.two		{}
+		
+		
+		
+		
+		.mainDiv { 
+			display: flex;					/* this turns on flex */
+			background-color: DodgerBlue;
+			flex-direction: row;
+			flex-wrap: wrap;
+			font-size: 20px;
+		}
+	
+		.boxes {				/* only DIV's in a flex-container */
+			background-color: #f1f1f1;
+			margin: 10px;
+			padding: 20px;
+			
+		}
+		
+		
+		
+		
 	</style>			
 
   
@@ -35,49 +53,57 @@
 <body id="body" onload="onload()">    
 
 	<img src="- Birding Banner.jpg" class="bg"> 
+	
 	<br> &nbsp;
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 <!-- ************************************************************************ -->
-	<div style="margin-Top: 10px; width: 95%; margin:auto;"> 
-		<div  class="one">   
-			<strong> E-Bird   </strong>
-				<br>	<a href="https://ebird.org/region/US-NY-027"			> Dutchess County	</a>
-						<a href="https://ebird.org/alert/summary?sid=SN36600" 	> Alerts		 	</a>		
-						<a href="https://ebird.org/region/US-NY-027/recent-checklists" 	> Checklists </a>		
-				<br> 	<a href="https://ebird.org/region/US-NY-079"			> Putnam County		</a>
-						<a href="https://ebird.org/alert/summary?sid=SN37085" 	> Alerts		 	</a>		
-				<br> 	<a href="https://ebird.org/region/US-NY-071"			> Orange County		</a>
-						<a href="https://ebird.org/alert/summary?sid=SN35958" 	> Alerts		 	</a>		
-				<br> 	<a href="https://ebird.org/region/US-NY-111"			> Ulster County		</a>
-						<a href="https://ebird.org/alert/summary?sid=SN36077" 	> Alerts		 	</a>
-				<br>    <a href="https://ebird.org/region/USFWS_268"            > Montezuma         </a> 						
-				        <a href="https://ebird.org/hotspot/L109216"             > Milford           </a> 						
+	<div class="mainDiv" id="mainDiv"> 
+		
+		
+		
+		<div class="boxes" >   
+		  <strong> E-Bird   </strong>
+			<table> 
+				<tr> <td> <a href="https://ebird.org/region/US-NY-027"			> Dutchess County	</a>
+					 <td> <a href="https://ebird.org/alert/summary?sid=SN36600" 	> Alerts		 	</a>		
+					 <td> <a href="https://ebird.org/region/US-NY-027/recent-checklists" 	> Checklists </a>		
+				<tr> <td> <a href="https://ebird.org/region/US-NY-079"			> Putnam County		</a>
+					 <td> <a href="https://ebird.org/alert/summary?sid=SN37085" 	> Alerts		 	</a>		
+				<tr> <td> <a href="https://ebird.org/region/US-NY-071"			> Orange County		</a>
+					 <td> <a href="https://ebird.org/alert/summary?sid=SN35958" 	> Alerts		 	</a>		
+				<tr> <td> <a href="https://ebird.org/region/US-NY-111"			> Ulster County		</a>
+					 <td> <a href="https://ebird.org/alert/summary?sid=SN36077" 	> Alerts		 	</a>
+				<tr> <td> &nbsp;
+				<tr> <td> <a href="https://ebird.org/region/USFWS_268"            > Montezuma         </a> 						
+				     <td> <a href="https://ebird.org/hotspot/L109216"             > Milford           </a> 						
+				</table>					
 		</div>		
 			
-		<div  class="two">   
-				<strong> Local Birding   </strong>
-				<br>	<a href="https://watermanbirdclub.org"							> RT Waterman	</a>
-						<a href="https://watermanbirdclub.org/about-us/field-trips-2/"	> Field Trips	</a>
-						<a href="https://ebird.org/profile/MjQxNzIz/US-NY"	> 			  Checklists 	</a>
-				<br>     &nbsp;&nbsp; Dutchess County  
-				<a href="https://watermanbirdclub.org/wp-content/uploads/2019/09/checklist.pdf"> 
-																						  Checklist <a>
-				    	
-				<br>	<a href="DOC - Birds of Dutchess County.pdf">					  The Birds of DC </a> 	
-				
-				<br>	<a href="https://watermanbirdclub.org/wp-content/uploads/2016/01/Where-to-Bird-in-DC-3rd-ed-1.pdf">	
-																						  Where to Bird  </a> in Dutchess County
-				<br>	<a href="https://orangebirding.com/?m=202406"	> 				  Orange County Birding  </a>
-				<br>	<a href="https://www.tide-forecast.com/locations//New-Hamburg-Hudson-River-New-York/tides/latest"> 	 Hudson Tides</a>
+		<div class="boxes" >   
+		  <strong> Local Birding   </strong>
+			<table> 	
+				<tr> <td> <a href="https://watermanbirdclub.org"							> RT Waterman	</a>
+					 <td> <a href="https://watermanbirdclub.org/about-us/field-trips-2/"	> Field Trips	</a>
+					 <td> <a href="https://ebird.org/profile/MjQxNzIz/US-NY"	> 			  Checklists 	</a>
+				<tr> <td> <a href="https://watermanbirdclub.org/wp-content/uploads/2019/09/checklist.pdf"> Dutchess Checklist <a>
+				     <td> <a href="DOC - Birds of Dutchess County.pdf">					  Dutchess Birds </a> 	
+					 <td> <a href="https://watermanbirdclub.org/wp-content/uploads/2016/01/Where-to-Bird-in-DC-3rd-ed-1.pdf">	
+																						  Where to Bird  </a> 
+				<tr> <td> <a href="https://orangebirding.com/?m=202406"	> 				  Orange County Birding  </a>
+				<tr> <td> <a href="https://www.tide-forecast.com/locations//New-Hamburg-Hudson-River-New-York/tides/latest"> 	 Hudson Tides</a>
+				</table>
 		</div>
 	
-	</div> 
-	<br style="clear:both;">  
-	<br>
-	
-	<div style="width: 95%; margin:auto;">
-	<!--- --------------------------------------------------------------------------------------------------------- --->                               	
-		<div  class="d3"  >   
+		<div class="boxes">   
 				    <a href="-  Bird Life List.xlsx" 			>  My Life List	</a>
 					<a href="WantList.txt">						   Want List </a> 						
 			<br>    <a href="https://www.allaboutbirds.org/news/"> Cornell's Birds </a>		
@@ -90,19 +116,19 @@
 		</div>  
 	
 	<!--- --------------------------------------------------------------------------------------------------------- --->                               	
-		<div  class="d4"  >   
-				    <a href="IDX Ducks.pdf" 		> Ducks	</a>	
+		<div class="boxes"   >   
 				    <a href="ID Ducks.docx" 			> &#x270E;	</a>	
-			<br>    <a href="IDX Raptors.pdf"			> Raptors </a>		
-			        <a href="ID Raptors.docx"			> &#x270E; </a>		
-			<br>    <a href="IDX Sparrows.pdf"			> Sparrows </a>		
-			        <a href="ID Sparrows.docx"			> &#x270E; </a>		
-			<br>    <a href="IDX WoodP Wren Finch.pdf"	> Raptors </a>		
-			        <a href="IDX WoodP Wren Finch.docx"	> &#x270E; </a>		
+					<a href="IDX Ducks.pdf" 			> Ducks	</a>	
+		   	<br>    <a href="ID Raptors.docx"			> &#x270E; </a>		
+					<a href="IDX Raptors.pdf"			> Raptors </a>		
+			<br>    <a href="ID Sparrows.docx"			> &#x270E; </a>		
+					<a href="IDX Sparrows.pdf"			> Sparrows </a>		
+			<br>    <a href="IDX WoodP Wren Finch.docx"	> &#x270E; </a>		
+					<a href="IDX WoodP Wren Finch.pdf"	> Small Birds </a>		
+			    
 		</div>  
 
 	</div>
-	<br style="clear:both;">  
 	<br>
 	<!--- --------------------------------------------------------------------------------------------------------- --->                               	
 	 <footer>	
@@ -110,7 +136,7 @@
 		<p>	
 		  <script>
 			var lastDate = document.lastModified;
-			document.write("v1.1 - Last updated: " + " " + lastDate.substr(0,10));
+			document.write("v2.0 - Last updated: " + " " + lastDate.substr(0,10));
 			
 		 </script>	
 	</footer>				
@@ -125,34 +151,24 @@
 			else                					  {var laptop = true; }
 			
 			
-			var one	 = document.querySelector(".one");
-			var two	 = document.querySelector(".two");
-			var d3    = document.querySelector(".d3");
-			var d4    = document.querySelector(".d4");
+			var mainDiv	 = document.getElementById("mainDiv");
+		
 			var body = document.getElementById("body"); 
 			
 			
 			
-			//laptop = false;
+			// laptop = false;
 			
 			
 			if (laptop) { 
-				one.setAttribute("style","width:45%");
-				one.style.cssFloat = "left"; 
-				two.setAttribute("style","width:45%");
-				two.style.cssFloat = "right";
-				d3.setAttribute("style","width:45%");
-				d3.style.cssFloat = "left"; 				
-				d4.setAttribute("style","width:45%");
-				d4.style.cssFloat = "right";
+				
 				
 				//document.getElementById("status").innerHTML = "working!";
 			
 			}
-			else {
-				 two.style.marginTop = "40px"; 
-				 d4.style.marginTop = "40px"; 
-				 body.style.fontSize = "50px"; 
+			else {  
+				 mainDiv.style.fontSize = "50px";  
+			
 			}
 			
 		}				
