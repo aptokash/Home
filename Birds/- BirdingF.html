@@ -31,13 +31,14 @@
 			background-color: DodgerBlue;
 			flex-direction: row;
 			flex-wrap: wrap;
+			font-size: 20px;
 		}
 	
 		.flex-container > div {				/* only DIV's in a flex-container */
 			background-color: #f1f1f1;
 			margin: 10px;
 			padding: 20px;
-			font-size: 20px;
+			
 		}
 		
 		
@@ -65,7 +66,7 @@
 	
 	
 <!-- ************************************************************************ -->
-	<div class="flex-container"> 
+	<div class="flex-container" id="mainDiv"> 
 		<div  >   
 			<strong> E-Bird   </strong>
 				<br>	<a href="https://ebird.org/region/US-NY-027"			> Dutchess County	</a>
@@ -147,34 +148,26 @@
 			else                					  {var laptop = true; }
 			
 			
-			var one	 = document.querySelector(".one");
-			var two	 = document.querySelector(".two");
-			var d3    = document.querySelector(".d3");
-			var d4    = document.querySelector(".d4");
+			var mainDiv	 = document.getElementById("mainDiv");
+		
 			var body = document.getElementById("body"); 
 			
 			
 			
-			//laptop = false;
+			laptop = false;
 			
 			
 			if (laptop) { 
-				one.setAttribute("style","width:45%");
-				one.style.cssFloat = "left"; 
-				two.setAttribute("style","width:45%");
-				two.style.cssFloat = "right";
-				d3.setAttribute("style","width:45%");
-				d3.style.cssFloat = "left"; 				
-				d4.setAttribute("style","width:45%");
-				d4.style.cssFloat = "right";
+				
 				
 				//document.getElementById("status").innerHTML = "working!";
 			
 			}
-			else {
-				 two.style.marginTop = "40px"; 
+			else {  
+				 mainDiv.style.fontSize = "50px";  
+			/*	 two.style.marginTop = "40px"; 
 				 d4.style.marginTop = "40px"; 
-				 body.style.fontSize = "50px"; 
+				 body.style.fontSize = "50px"; */
 			}
 			
 		}				
