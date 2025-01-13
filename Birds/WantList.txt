@@ -1,16 +1,12 @@
     Current:	133	257	I Need 	124	Species
 
 WATERFOWL
-    Snow Goose
-    Gr. White-fronted Goose
     Brant
     Cackling Goose
     Tundra Swan
     Blue-winged Teal
     Northern Shoveler
-    Gadwall
     Mallard x Am. Black (hybrid)
-    Northern Pintail
     Green-winged Teal
     Canvasback
     Greater Scaup
@@ -18,15 +14,10 @@ WATERFOWL
     Surf Scoter
     White-winged Scoter
     Black Scoter
-    Long-tailed Duck
-    Red-breasted Merganser
-
+ 
 GALLINACEOUS BIRDS
     Northern Bobwhite
     Ruffed Grouse
-
-GREBES
-    Horned Grebe
 
 CUCKOOS
     Black-billed Cuckoo
@@ -70,7 +61,8 @@ HERONS and Allies
 
 DIURNAL RAPTORS
     Sharp-shinned Hawk
-    '- 	OWLS
+
+OWLS
     Barn Owl
     Eastern Screech-Owl
     Northern Saw-whet Owl
