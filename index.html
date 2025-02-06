@@ -7,6 +7,7 @@
      ***  2021/09/03   Added a cybersecurity exposure                                          *** 
      ***  2021/09/05   changed to white blocks                                                 *** 
      ***  2024/02/25   quiz convert                                                            *** 
+     ***  2025/02/26   noe UNIVERSITY, removed ADVISING TAB                                    *** 
 	 ******************************************************************************************** -->
 <html lang="en"> 
 <head>
@@ -28,7 +29,6 @@
      ************************************************************************ -->         	 
 	<p style="text-align:left; font-size: 18px;">  
 		 <a href="index.html" ><strong>					 	Home </strong></a>
-		 <a href="Advising.html" >							Advising</a>
 		 <a href="CoolClips.html" >							Cool Clips</a>
 		 <a href="Articles.html" >							Articles/Links</a>
 		 <a href="Bookshelf.html" > 						Bookshelf </a>
@@ -42,7 +42,7 @@
 <!-- ************************************************************************ -->
 	<table class="block1" style="text-align: top;">   
 	<tr style="color:black, padding-bottom: 5px">
-		<td> <img src="ZMarist_Logo.jpg" style=" width: 10vw; height: 10vh;"></td>
+		<td> <img src="ZMarist_Logo.jpg" style=" width: 12vw; height: 8vh;"></td>
 		
 		<!-- *********************    First Column  ************************* -->                                             
 		<td style="color:black, padding-bottom: 5px; text-align: center; font-size:18px;"> 	<strong>		
@@ -143,9 +143,10 @@
 	
 
 	 <footer>	
-		<p>	Website &copy; 2021-2025 A. Tokash, 
+		
 		  <script>
 			var lastDate = document.lastModified;
+			document.write("<p>	Website &copy; 2021-"+ lastDate.substr(6,4) + " A. Tokash, "  );
 			document.write("Last updated: " + " " + lastDate.substr(0,10));
 		  </script>	
 						
