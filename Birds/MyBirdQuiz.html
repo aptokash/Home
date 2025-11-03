@@ -1,0 +1,56 @@
+<!doctype  html >
+<html>
+    <head> 
+	<style>
+		body 	{ background-color: tan; font-family: times; } 
+		a       { color: black;} 
+		.bg	{  width: 100%;	z-index: 0; border: 2px solid black; }
+		.block2 { background-color: #728fce;   /*344b60 */
+			  font-size:18px;
+			  border: 1px solid black;
+		          padding:20px 20px 20px 20px;	
+			}
+	</style>	
+</head>	
+
+<h2>  Lyco Bird Quizzes </h2> 
+
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <button onclick="DoSparrows()"> 	Sparrows</button>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <button onclick="DoWaterfowl()"> Waterfowl</button>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <button onclick="DoOther()"> 	Other</button>
+
+<!-- ------------------------------------------------------------ --> 
+<script src="MyBirdQuiz.js"></script>
+
+<script>	
+	function DoSparrows() {
+
+		qty = sparrows.length; 
+		let x = getRandomInt(1, qty) - 1; //
+		window.open("https:\\" + sparrows[x],"_blank");
+	};
+	
+	function DoWaterfowl() {
+
+		qty = waterfowl.length; 
+		let x = getRandomInt(1, qty) - 1; //
+		window.open("https:\\" + waterfowl[x],"_blank");
+	};
+	
+	function DoOther() {
+
+		qty = other.length; 
+		let x = getRandomInt(1, qty) - 1; //
+		window.open("https:\\" + other[x],"_blank");
+	};
+
+
+	function getRandomInt(min, max) {
+		min = Math.ceil(min); // Ensure min is an integer
+		max = Math.floor(max); // Ensure max is an integer
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
+</script>
+
+
