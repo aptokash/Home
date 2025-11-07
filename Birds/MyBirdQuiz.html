@@ -25,22 +25,22 @@
 <script>	
 	function DoSparrows() {
 
-		qty = sparrows.length; 
-		let x = getRandomInt(1, qty) - 1; //
+		qty = sparrows.length -1; 			// decrement since the last element is X 
+		let x = getRandomInt(1, qty) - 1; 	
 		window.open("https:\\" + sparrows[x],"_blank");
 	};
 	
 	function DoWaterfowl() {
 
-		qty = waterfowl.length; 
-		let x = getRandomInt(1, qty) - 1; //
+		qty = waterfowl.length -1; 			// decrement since the last element is X 
+		let x = getRandomInt(1, qty) - 1; 	
 		window.open("https:\\" + waterfowl[x],"_blank");
 	};
 	
 	function DoOther() {
 
-		qty = other.length; 
-		let x = getRandomInt(1, qty) - 1; //
+		qty = other.length -1; 				// decrement since the last element is X 
+		let x = getRandomInt(1, qty) - 1; 
 		window.open("https:\\" + other[x],"_blank");
 	};
 
